@@ -1,5 +1,6 @@
 mod failure_models {
     pub mod models;
+    pub mod nonparametric_model;
 }
 
 fn main() {
@@ -24,4 +25,9 @@ fn main() {
 
     let variance_inv = failure_models::models::variance_of_inversechi(5);
     println!("Variance of inverse chi-square: {}", variance_inv);
+
+    let x = vec![1.0, 2.0, 3.0];
+    let y = vec![4.0, 5.0, 6.0];
+    let alpha = 0.05;
+    failure_models::nonparametric_model::logrank(x, y, alpha);
 }
