@@ -1,0 +1,8 @@
+[package]
+name = "reliability-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+statrs = "0.17.1"
+pretty_assertions = "1"

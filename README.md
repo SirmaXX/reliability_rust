@@ -17,6 +17,10 @@ cargo run
 cargo test
 ```
 
+## How to get documentation
+```
+cargo doc --open
+```
 ## Example usage
 You can check main.rs file for example usage
 
